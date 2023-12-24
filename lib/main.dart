@@ -16,13 +16,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.deepOrange,
+        primarySwatch: Colors.deepPurple,
       ),
       initialRoute: "/",
       routes: {
-        "/": (context) => const HomePage(),
-        Routes.loginRoute : (context)=>LoginPage(),
-        Routes.homeRoute : (context)=>HomePage(),
+        "/": (context) => const LoginPage(),
+        Routes.loginRoute : (context)=>const LoginPage(),
+        Routes.homeRoute : (context)=>const HomePage(),
       }
     );
   }
